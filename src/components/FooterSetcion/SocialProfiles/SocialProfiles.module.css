@@ -1,0 +1,27 @@
+.container{
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #F1F1F3
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 14px;
+}
+.item{
+    width: 44px;
+height: 44px;
+padding: 12px;
+border-radius: 6px;
+border: 1px solid #F1F1F3;
+background: #F7F7F8;
+}
+.title{
+    margin-bottom: 10px;
+    font-family: Be Vietnam Pro;
+font-size: 18px;
+font-weight: 600;
+line-height: 27px;
+text-align: left;
+color: #262626;
+}

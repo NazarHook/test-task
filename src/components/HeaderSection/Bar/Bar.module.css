@@ -1,0 +1,16 @@
+.container{
+    background: #FF9500;
+    color: #FFFFFF;
+padding: 10px 16px 10px 16px;
+border-radius: 6px;
+margin-top: 40px;
+font-family: Be Vietnam Pro;
+font-size: 15px;
+font-weight: 400;
+line-height: 21px;
+display: flex;
+justify-content: center;
+transform: transition 500ms cubic-bezier(.32,.63,.83,.67);
+align-items: center;
+gap: 12px;
+}

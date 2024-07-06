@@ -1,0 +1,12 @@
+.footer{
+    display: block;
+    width: 100%;
+    background: #FFFFFF;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 358px;
+    padding: 50px 0px 24px 0px ;
+    transform: transition 500ms cubic-bezier(.32,.63,.83,.67);
+}

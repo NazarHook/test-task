@@ -1,0 +1,25 @@
+.list{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    list-style-type: none;
+    text-decoration: none;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.link{
+    transform: transition 500ms cubic-bezier(.32,.63,.83,.67);
+    text-decoration: none;
+    font-family: Be Vietnam Pro;
+font-size: 15px;
+font-weight: 400;
+line-height: 22.5px;
+text-align: left;
+color: #262626;
+}
