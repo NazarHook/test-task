@@ -3,6 +3,7 @@
     flex-direction: row;
     transform: transition 500ms cubic-bezier(.32,.63,.83,.67);
     margin-bottom: 24px;
+    gap: 30px;
 }
 .list{
 list-style-type: none;
