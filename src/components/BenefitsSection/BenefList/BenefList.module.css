@@ -4,17 +4,15 @@
     gap: 20px;
     list-style-type: none;
     text-decoration: none;
-    transform: transition 500ms cubic-bezier(.32,.63,.83,.67);
 }
 .item{
-    width: Fill (358px)px;
-height: Hug (293px)px;
+    width: 358px;
+height: 293px;
 padding: 30px;
-gap: 30px;
 border-radius: 10px;
-opacity: 0px;
 background: #FFFFFF;
 text-align: right;
+position: relative;
 }
 .title{
 font-size: 20px;
@@ -42,6 +40,9 @@ color: #262626;
 }
 .arrEl{
     display: inline-block;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
     width: 54px;
     height: 54px;
     padding: 14px;
@@ -49,4 +50,94 @@ color: #262626;
     border: 1px solid #F1F1F3;
     background: #FCFCFD;
     text-align: center;
+}
+.icon{
+    width: 26px;
+    height: 26px;
+}
+.resp{
+    display: none;
+}
+@media (min-width:1440px) {
+    .resp{
+        display: inline-block;
+        width: 413px;
+padding: 40px;
+        border-radius: 10px;
+        background: #FFFFFF;
+        text-align: right;
+        position: relative;
+
+    }
+    .num{
+        font-size: 60px;
+    }
+    .arrEl{
+        right: 40px;
+    bottom: 40px;
+    }
+    .item{
+        width: 413px;
+height: 346px;
+padding: 40px 40px 0px 40px;
+    }
+    .title{
+        margin-top: 40px;
+        font-size: 20px;
+line-height: 30px;
+    }
+    .text{
+        margin-bottom: 40px;
+        font-size: 16px;
+line-height: 24px;
+    }
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+}
+@media (min-width:1920px) {
+    .resp{
+        display: inline-block;
+        width: 519px;
+        height: 437px;
+         padding: 50px;
+        border-radius: 10px;
+        background: #FFFFFF;
+        text-align: right;
+    }
+    .num{
+        font-size: 80px;
+    }
+    .arrEl{
+        right: 40px;
+    bottom: 40px;
+    }
+    .item{
+        width: 517px;
+        height: 437px;
+padding: 50px;
+    }
+    .title{
+        margin-top: 50px;
+        font-size: 24px;
+line-height: 36px;
+    }
+    .text{
+        font-size: 18px;
+line-height: 27px;
+    }
+    .arrEl{
+        right: 50px;
+        bottom: 50px;
+        width: 74px;
+        height: 74px;
+        padding: 20px;
+        border-radius: 8px
+    }
+    .icon{
+        width: 34px;
+        height: 34px;
+    }
 }

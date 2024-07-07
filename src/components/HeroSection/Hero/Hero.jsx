@@ -1,4 +1,4 @@
-import Block from "../../TestimonialsSection/Block/Block";
+import Block from "../Block/Block";
 import Description from "../Description/Description";
 import Options from "../Options/Options";
 import Partners from "../Partners/Partners";

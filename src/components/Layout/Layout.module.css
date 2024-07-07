@@ -1,5 +1,15 @@
 .container {
-        margin-left: auto;
-    margin-right: auto;
+        margin: 0 auto;
     width: 358px;
 }
+@media (min-width: 1440px) {
+   .container{
+    width: 1280px;
+   }
+  }
+  @media (min-width: 1920px) {
+    .container{
+     width: 1595px;
+    }
+   }
+ 

@@ -9,12 +9,16 @@ export default function Footer() {
     return (
         <footer className={css.footer}>
  <div className={css.container}>
-      <NavLink to='/'><img src={logo} alt="logo" /></NavLink>
+    <div className={css.wrapper}>
+      <NavLink className={css.logo} to='/'><img src={logo} alt="logo" /></NavLink>
       <ContactInfo></ContactInfo>
+    </div>
+    <div className={css.block}>
       <OurLinks></OurLinks>
       <SocialProfiles></SocialProfiles>
-      <SkillBridge></SkillBridge>
+    </div>
         </div>
+        <SkillBridge></SkillBridge>
         </footer>
     )
 }

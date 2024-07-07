@@ -8,8 +8,8 @@ import Footer from '../FooterSetcion/Footer/Footer'
 export default function Layout() {
     return (
         <div >
-            <div className={css.container}>
             <Bar></Bar>
+            <div className={css.container}>
             <AppBar></AppBar>
             <Hero></Hero>
             <Benefits></Benefits>

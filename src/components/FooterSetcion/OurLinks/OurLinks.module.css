@@ -1,7 +1,6 @@
 .container{
     display: flex;
     flex-direction: row;
-    gap: 30px;
     transform: transition 500ms cubic-bezier(.32,.63,.83,.67);
     margin-bottom: 24px;
 }
@@ -23,4 +22,10 @@ font-weight: 600;
 line-height: 27px;
 text-align: left;
 color: #262626;
+}
+@media (min-width:1440px) {
+    .list{
+        width: 230px;
+    }
+    
 }

@@ -25,3 +25,10 @@ line-height: 27px;
 text-align: left;
 color: #262626;
 }
+@media (min-width:1440px) {
+    .container{
+        width: 230px;
+        border: none;
+    }
+   
+}

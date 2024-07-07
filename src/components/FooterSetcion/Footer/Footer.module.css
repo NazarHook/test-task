@@ -8,5 +8,36 @@
     margin-right: auto;
     width: 358px;
     padding: 50px 0px 24px 0px ;
-    transform: transition 500ms cubic-bezier(.32,.63,.83,.67);
+}
+.link{
+    width: 40px;
+    height: 40px;
+}
+@media (min-width:1440px) {
+    .container{
+        width: 1440px;
+        padding: 60px 80px 20px 80px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #F1F1F3
+    }
+    .block{
+        display: flex;
+        justify-content: space-around;
+        gap: 24px;
+    }
+}
+@media (min-width:1920px) {
+    .container{
+        width: 1595px;
+        padding: 100px 65px 100px 0 ;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #F1F1F3
+    }
+    .block{
+        display: flex;
+        justify-content: space-around;
+        gap: 24px;
+    }
 }

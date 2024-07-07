@@ -1,26 +1,31 @@
-import viteLogo from '/vite.svg'
-import { Route, Routes } from 'react-router-dom'
-import { lazy, Suspense } from "react";
-import Layout from '../components/Layout/Layout'
+import { Route, Routes } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+import Loader from './Loader/Loader.jsx';
+
+const HomePage = lazy(() => import('../pages/HomePage/HomePage.jsx'));
+const SignUpPage = lazy(() => import('../pages/SignUpPage/SignUpPage.jsx'));
+const LogInPage = lazy(() => import('../pages/LogInPage/LogInPage'));
+const CoursesPage = lazy(() => import('../pages/CoursesPage/CoursesPage'));
+const AboutUsPage = lazy(() => import('../pages/AboutUsPage/AboutUsPage'));
+const PricingPage = lazy(() => import('../pages/PricingPage/PricingPage'));
+const ContactPage = lazy(() => import('../pages/ContactPage/ContactPage'));
+const NotFoundPage = lazy(() => import('../pages/NotFoundPage/NotFoundPage'));
 function App() {
-  const HomePage = lazy(() => import('../pages/HomePage/HomePage'))
-  const SignUpPage = lazy(() => import('../pages/SignUpPage/SignUpPage'))
-const LogInPage = lazy(() => import('../pages/LogInPage/LogInPage'))
-const NotFoundPage = lazy(() => import('../pages/NotFoundPage/NotFoundPage'))
   return (
     <>
-    <Suspense fallback={<div>Loading...</div>}>
-    <Layout>   
-      <Routes>
-      <Route path='/' element={<HomePage/>} />
-      <Route path='/signup' element={<SignUpPage/>} />
-     <Route path='/login' element={<LogInPage/>} />
-     <Route path='*' element={<NotFoundPage/>} />
-      </Routes>
-        </Layout>
-    </Suspense>
+       <Suspense fallback={<Loader/>}>
+<Routes>
+<Route path="/" element={< HomePage/>}/>
+  <Route path="/signup" element={<SignUpPage />} />
+  <Route path="/login" element={<LogInPage />} />
+  <Route path="/courses" element={<CoursesPage />} />
+  <Route path="/aboutus" element={<AboutUsPage />} />
+  <Route path="/pricing" element={<PricingPage />} />
+  <Route path="/contact" element={<ContactPage />} />
+  <Route path="*" element={<NotFoundPage />} />
+</Routes>
+</Suspense>
     </>
-  )
+  );
 }
-
-export default App
+export default App;

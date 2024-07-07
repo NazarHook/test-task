@@ -7,15 +7,15 @@ export default function ContactInfo() {
     return (
         <ul className={css.list}>
             <li className={css.item}>
-                <img src={mail} alt="email" />
+                <img className={css.icon} src={mail} alt="email" />
                 <Link className={css.link} href='mailto:hello@skillbridge.com' >hello@skillbridge.com</Link>
             </li>
             <li className={css.item}>
-                <img src={tel} alt="phone" />
+                <img className={css.icon} src={tel} alt="phone" />
                 <Link className={css.link}  href='tel:+9191813232309' >+91 91813 23 2309</Link>
             </li>
             <li className={css.item}>
-                <img src={geo} alt="location" />
+                <img className={css.icon} src={geo} alt="location" />
                 <Link className={css.link} >Somewhere in the World</Link>
             </li>
         </ul>

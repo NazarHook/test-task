@@ -3,14 +3,28 @@
     color: #FFFFFF;
 padding: 10px 16px 10px 16px;
 border-radius: 6px;
-margin-top: 40px;
 font-family: Be Vietnam Pro;
 font-size: 15px;
 font-weight: 400;
 line-height: 21px;
 display: flex;
-justify-content: center;
-transform: transition 500ms cubic-bezier(.32,.63,.83,.67);
 align-items: center;
-gap: 12px;
+justify-content: center;
+margin: 0 auto;
+margin-top: 40px;
+width: 358px;
+}
+@media (min-width: 1440px) {
+    .container{
+        width: 1400px;
+padding: 10px 0px 10px 0px;   
+}
+   }
+@media (min-width: 1920px) {
+    .container{  
+        width: 1860px;
+padding: 14px 0px 14px 0px;
+font-size: 18px;
+line-height: 27px;
+    }
 }

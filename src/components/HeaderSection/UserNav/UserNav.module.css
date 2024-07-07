@@ -4,20 +4,44 @@
     align-items: center;
     gap: 40px;
 }
-.link{
-font-size: 14px;
-font-weight: 400;
-line-height: 21px;
-text-align: center;
-text-decoration: none;
-cursor: pointer;
-color: black;
+.link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
 }
-.link:hover{
+
+.link:hover {
     background: #FF9500;
     color: #FFFFFF;
     width: 90px;
-height: 45px;
-padding: 12px 20px 12px 20px;
-border-radius: 6px;
+    height: 45px;
+    padding: 12px 20px; 
+    border-radius: 6px;
+}
+
+@media (min-width: 1440px) {
+    .link{
+        font-size: 14px;
+line-height: 21px;
+    }
+    .link:hover{
+        width: 100px;
+    height: 45px;
+    padding: 12px 24px 12px 24px;
+    }
+}
+@media (min-width: 1920px) {
+    .link{
+        font-size: 18px;
+line-height: 27px;
+    }
+    .link:hover{
+        width: 133px;
+    height: 55px;
+    padding: 12px 34px 12px 34px;
+    }
 }

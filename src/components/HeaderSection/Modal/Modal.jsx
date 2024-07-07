@@ -1,16 +1,18 @@
-import css from './Modal.module.css'
-import xMark from '../../../assets/icons/x-mark.svg'
-import { NavLink } from 'react-router-dom'
-export default function Modal({setIsActive}) {
-    const closeModal = () => {
-          setIsActive(false)
-    }
+import css from './Modal.module.css';
+import xMark from '../../../assets/icons/x-mark.svg';
+import { NavLink } from 'react-router-dom';
+
+export default function Modal({ isActive, onClose }) {
+    const getClasses = () => {
+        return  isActive ? `${css.container} ${css.active}` : css.container;
+    };
+
     return (
-        <div className={css.container}>
-            <button onClick={closeModal} className={css.closeIcon} type='button'>
-            <img src={xMark} alt="close icon" />
+        <div className={getClasses()}>
+            <button className={css.closeIcon} type='button' onClick={onClose}>
+                <img src={xMark} alt="close icon" />
             </button>
-             <ul className={css.list}>
+            <ul className={css.list}>
                 <li>
                     <NavLink className={css.link} to='/'>Home</NavLink>
                 </li>
@@ -26,7 +28,7 @@ export default function Modal({setIsActive}) {
                 <li>
                     <NavLink className={css.link} to='/contact'>Contact</NavLink>
                 </li>
-             </ul>
+            </ul>
         </div>
-    )
+    );
 }
